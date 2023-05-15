@@ -6,17 +6,17 @@ class Spaceship extends Floater {
     myColor = 255;
     myCenterX = Math.random()*width;
     myCenterY = Math.random()*height; //holds center coordinates
-    myXspeed = 10;
-    myYspeed = 10; //holds the speed of travel in the x and y directions
+    myXspeed = 0;
+    myYspeed = 0; //holds the speed of travel in the x and y directions
     myPointDirection = 1 ;
   }
-  public void setXspeed (double x) {
-    myXspeed += x;
-  }
-  public void setYspeed (double y) {
-    myYspeed += y;
-  }
-  public void accelerate(double a) {
-    super.accelerate(a);
-  }
+  //public void setXspeed (double x) {
+  //  myXspeed += x;
+  //}
+  //public void setYspeed (double y) {
+  //  myYspeed += y;
+  //}
+  //public void accelerate(double a) {
+  //  super.accelerate(a);
+  //}
 }

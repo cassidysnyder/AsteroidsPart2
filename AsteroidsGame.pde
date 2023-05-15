@@ -16,6 +16,7 @@ public void setup()
 }
 
 public void draw() {
+  mySpaceship.move();
   background(0);
   mySpaceship.show();
   for (int i = 0; i <200; i++) {
@@ -35,16 +36,18 @@ public void keyPressed()
   if (key == 'd') {
     mySpaceship.turn(5);
   }
-  if (key == 'w') {
-    mySpaceship.move();
-  }
+  //if (key == 'w') {
+  //  mySpaceship.move();
+  //}
   if (key == 'h') {
-    mySpaceship.setXspeed(0);
-    mySpaceship.setYspeed(0);
+    //mySpaceship.setXspeed(0);
+    //mySpaceship.setYspeed(0);
+    mySpaceship.myXspeed = 0.0;
+    mySpaceship.myYspeed = 0.0;
     mySpaceship.myCenterX= Math.random()*width;
     mySpaceship.myCenterY= Math.random()*height;
   }
   if (key == 'z') {
-    mySpaceship.accelerate(5);
+    mySpaceship.accelerate(.5);
   }
 }
